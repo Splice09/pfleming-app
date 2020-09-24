@@ -1,4 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css"
+
+/* You can add global styles to this file, and also import other style files */ 
+
+/*
+* BODY STYLE
+*/;
+.app {
+    display:absolute;
+    top: 2.5vh;
+    left: 1.2vw;
+    right: 1.2vw;
+    bottom: 2.5vh;
+    position: fixed;
+    background-color: #F7F7F7;
+    pointer-events: none;
+    z-index: -1;
+}
+.container {
+    display:flex;
+    margin: 0;
+    width: 95vw;
+    max-width: 95vw !important;
+    top: 5vh;
+    left: 2.5vw;
+    right: 2.5vw;
+    bottom: 5vh;
+    position: fixed;
+    background-color: green;
+    pointer-events: none;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    background-color: blue;
+}
+
 .title{
     font-family: 'Permanent Marker', cursive;
 }
