@@ -1,36 +1,59 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "_colors.scss";
 
-
-/* You can add global styles to this file, and also import other style files */ 
-
 /*
-* BODY STYLE
+* COLORED BORDER
 */
 .app {
-    display:absolute;
     top: 2.5vh;
     left: 1.2vw;
     right: 1.2vw;
     bottom: 2.5vh;
     position: fixed;
-    background-color: #F7F7F7;
+    overflow: hidden;
+    background: linear-gradient(45deg, $tiffany-blue, $mint);
     pointer-events: none;
+}
+
+.app:before,.app:after{
+    content: '';
+    position: absolute;
+    width: 25vw;
+    height: .05vh;
+}
+
+.app:before{
+    background: $hot-pink;
+    box-shadow: 0 0 50vh 50vh $hot-pink;
+    opacity: 1;
+}
+
+.app:after {
+    background: $yellow;
+    box-shadow: 0 0 50vh 50vh $yellow;
+    opacity: 1;
+    bottom: 0;
+    right: 0;
     z-index: -1;
 }
+
+
+
+/*
+* BODY STYLE
+*/
 .container {
     display:flex;
     margin: 0;
-    width: 95vw;
-    max-width: 95vw !important;
+    padding: 0;
     top: 5vh;
+    bottom: 5vh;
     left: 2.5vw;
     right: 2.5vw;
-    bottom: 5vh;
+    max-width: 95vw;
     position: fixed;
-    background-color: green;
+    background-color: $white;
     pointer-events: none;
-    z-index: -1;
     align-items: center;
     justify-content: center;
 }
@@ -45,4 +68,21 @@
 
 p {
     font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 800px){
+    .app { 
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .container {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        max-width: calc(100vw - 40px);
+    }
 }
