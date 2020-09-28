@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Navigation } from '../models/navigation.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pfleming-app';
+  navigation: Navigation;
+
+  ngOnInit() {
+    this.navigation = {
+      home: "HOME",
+      blog: "BLOG",
+      learning: "LEARNING"
+    };
+  }
 }

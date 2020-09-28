@@ -4,7 +4,7 @@
 /*
 * COLORED BORDER
 */
-.app {
+.borderOutter {
     top: 2.5vh;
     left: 1.2vw;
     right: 1.2vw;
@@ -15,20 +15,20 @@
     pointer-events: none;
 }
 
-.app:before,.app:after{
+.borderOutter:before,.borderOutter:after{
     content: '';
     position: absolute;
     width: 25vw;
     height: .05vh;
 }
 
-.app:before{
+.borderOutter:before{
     background: $hot-pink;
     box-shadow: 0 0 50vh 50vh $hot-pink;
     opacity: 1;
 }
 
-.app:after {
+.borderOutter:after {
     background: $yellow;
     box-shadow: 0 0 50vh 50vh $yellow;
     opacity: 1;
@@ -37,15 +37,8 @@
     z-index: -1;
 }
 
-
-
-/*
-* BODY STYLE
-*/
-.container {
-    display:flex;
+.borderInner {
     margin: 0;
-    padding: 0;
     top: 5vh;
     bottom: 5vh;
     left: 2.5vw;
@@ -54,22 +47,48 @@
     position: fixed;
     background-color: $white;
     pointer-events: none;
+}
+
+/*
+* NAVIGATION
+*/
+.navbar {
+    width: 100%;
+    display:flex;
     align-items: center;
     justify-content: center;
-}
-
-.home {
-    background-color: blue;
-}
-
-.title{
-    font-family: 'Permanent Marker', cursive;
-}
-
-p {
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
 }
 
+/*
+* CONTENT
+*/
+.appContainer {
+    width: 95vw;
+    height: 90vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+.contentContainer {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.row {
+    margin: 0;
+}
+
+
+/*
+* MEDIA QUERIES
+*/
 @media (max-width: 800px){
     .app { 
         top: 0px;
@@ -78,7 +97,7 @@ p {
         bottom: 0px;
     }
 
-    .container {
+    .borderInner {
         top: 20px;
         left: 20px;
         right: 20px;
@@ -86,3 +105,4 @@ p {
         max-width: calc(100vw - 40px);
     }
 }
+

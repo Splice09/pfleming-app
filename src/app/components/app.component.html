@@ -1,40 +1,19 @@
-<div class="app">
-    <div class="container">
-        
-        <!-- <nav id="header" class="app-component navbar navbar-expand-lg navbar-dark background-primary fixed-top">
-        <div class="container">
-            <div class="app-component collapse navbar-collapse menuItemsContainer">
-            <div class="row">
-                <ul class="app-component nav nav-pills flex-column flex-lg-row mr-auto">
-                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                    <a class="nav-link" routerLink="">{{'mainMenu.ContractManagement' | translate}}</a>
-                </li>
-                <li *ngIf="!environment.disableAggMan" class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="/crosscontract">{{'mainMenu.CrossContract' | translate}}</a>
-                </li>
-                <li *ngIf="!environment.disableAggMan" class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="/zonemanagement">{{'mainMenu.ZoneManagement' | translate}}</a>
-                </li>
-                <li *ngIf="!environment.disableAggMan" class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="/allocationdefaults">{{'mainMenu.AllocationDefaults' | translate}}</a>
-                </li>
-                </ul>
-            </div>
-            </div> 
-            
-            <div *ngIf="!isUserLoggedIn && !router.isActive('/about', false) || false" class="app-component collapse navbar-collapse menuItemsContainer">
-            <ul class="app-component nav nav-pills flex-column flex-lg-row ml-auto">
-                <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/about"><i class="fa fa-info-circle"></i></a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </nav> -->
-       
+<div class="appContainer">
+    <nav class="navbar">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{navigation.home}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/blog" routerLinkActive="active">{{navigation.blog}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/learning" routerLinkActive="active">{{navigation.learning}}</a>
+            </li>
+        </ul>
+    </nav>
     
-        <main>
-            <router-outlet></router-outlet>
-        </main> 
-    </div>
+    <main class="contentContainer">
+        <router-outlet></router-outlet>
+    </main> 
 </div>
