@@ -1,9 +1,31 @@
 .home {
     background-color: blue;
+    width: 500px;
 }
 
 .title{
     font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.first {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.last {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroImage {
+    max-width:75%;
 }
 
 p {
