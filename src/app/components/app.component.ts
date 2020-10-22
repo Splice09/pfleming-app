@@ -4,7 +4,7 @@ import { Navigation } from '../models/navigation.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'pfleming-app';
@@ -13,7 +13,7 @@ export class AppComponent {
   ngOnInit() {
     this.navigation = {
       home: "HOME",
-      blog: "BLOG",
+      blog: "WRITING",
       learning: "LEARNING"
     };
   }
