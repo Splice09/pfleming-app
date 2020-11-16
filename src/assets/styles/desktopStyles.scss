@@ -1,4 +1,3 @@
-@import "~bootstrap/dist/css/bootstrap.css";
 @import "_colors.scss";
 
 /*
@@ -50,26 +49,14 @@
 }
 
 /*
-* NAVIGATION
-*/
-.navbar {
-    width: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
-}
-
-/*
 * CONTENT
 */
 .appContainer {
-    width: 95vw;
-    height: 90vh;
+    width: 96vw;
+    height: 92vh;
     margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     display: flex;
     flex-direction: column;
 }

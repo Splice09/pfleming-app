@@ -31,9 +31,9 @@ const routes: Routes = [
     data: { title: 'Home Page' } 
   },
   {
-    path: 'blog',
+    path: 'writing',
     component: BlogComponent,
-    data: { title: 'Blog'}
+    data: { title: 'Writing'}
   },
   {
     path: 'learning',

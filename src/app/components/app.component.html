@@ -1,14 +1,14 @@
 <div class="appContainer">
     <nav class="navbar">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{navigation.home}}</a>
+        <ul class="navPills">
+            <li class="navItem">
+                <a class="navLink homeLink" routerLink="" routerLinkActive="activeHome" [routerLinkActiveOptions]="{ exact: true }">{{navigation.home}}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/blog" routerLinkActive="active">{{navigation.blog}}</a>
+            <li class="navItem">
+                <a class="navLink writingLink" routerLink="/writing" routerLinkActive="activeWriting">{{navigation.blog}}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/learning" routerLinkActive="active">{{navigation.learning}}</a>
+            <li class="navItem">
+                <a class="navLink learningLink" routerLink="/learning" routerLinkActive="activeLearning">{{navigation.learning}}</a>
             </li>
         </ul>
     </nav>

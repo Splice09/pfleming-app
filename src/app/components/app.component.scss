@@ -1,0 +1,142 @@
+@import "../../assets/styles/colors";
+
+/*
+* NAVIGATION
+*/
+.navbar {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.navPills {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navItem {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.navLink {
+    color: $header-color; 
+    animation-duration: .5s;
+}
+
+.navLink:hover {
+    text-decoration: none;
+    color: $header-color;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.homeLink {
+    animation-name: homeLinkUnhover;
+}
+
+.homeLink:hover {
+    animation-name: homeLinkHover;
+}
+
+.writingLink {
+    animation-name: writingLinkUnhover;
+}
+
+.writingLink:hover {
+    animation-name: writingLinkHover;
+}
+
+.learningLink {
+    animation-name: learningLinkUnhover;
+}
+
+.learningLink:hover {
+    animation-name: learningLinkHover;
+}
+
+.activeHome {
+    -webkit-box-shadow: 0px -3px 0px 0px $hot-pink inset;
+    box-shadow: 0px -3px 0px 0px $hot-pink inset;
+}
+
+.activeWriting {
+    -webkit-box-shadow: 0px -3px 0px 0px $mint inset;
+    box-shadow: 0px -3px 0px 0px $mint inset;
+}
+
+.activeLearning {
+    -webkit-box-shadow: 0px -3px 0px 0px $yellow inset;
+    box-shadow: 0px -3px 0px 0px $yellow inset;
+}
+
+@keyframes homeLinkHover {
+    from {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    to {
+        -webkit-box-shadow: 0px -1.5em 0px 0px $hot-pink inset;
+        box-shadow: 0px -1.5em 0px 0px $hot-pink inset;
+    }
+}
+
+@keyframes homeLinkUnhover {
+    from {
+        -webkit-box-shadow: 0px -1.5em 0px 0px $hot-pink inset;
+        box-shadow: 0px -1.5em 0px 0px $hot-pink inset;
+    }
+    to {
+        
+    }
+}
+
+@keyframes writingLinkHover {
+    from {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    to {
+        -webkit-box-shadow: 0px -1.5em 0px 0px $mint inset;
+        box-shadow: 0px -1.5em 0px 0px $mint inset;
+    }
+}
+
+@keyframes writingLinkUnhover {
+    from {
+        -webkit-box-shadow: 0px -1.5em 0px 0px $mint inset;
+        box-shadow: 0px -1.5em 0px 0px $mint inset;
+    }
+    to {
+        
+    }
+}
+
+@keyframes learningLinkHover {
+    from {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    to {
+        -webkit-box-shadow: 0px -1.5em 0px 0px $yellow inset;
+        box-shadow: 0px -1.5em 0px 0px $yellow inset;
+    }
+}
+
+@keyframes learningLinkUnhover {
+    from {
+        -webkit-box-shadow: 0px -1.5em 0px 0px $yellow inset;
+        box-shadow: 0px -1.5em 0px 0px $yellow inset;
+    }
+    to {
+        
+    }
+}
