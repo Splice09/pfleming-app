@@ -12,6 +12,8 @@
     font-family: 'Permanent Marker', cursive;
     font-size: 80px;
     margin-bottom: 0;
+    color: $header-color;
+    line-height:1.2em;
 }
 
 .first {
@@ -40,6 +42,7 @@
 
 p {
     font-family: 'Open Sans', sans-serif;
+    color: $header-color;
 }
 
 /*
@@ -60,6 +63,7 @@ p {
 .link {
     -webkit-box-shadow: 0px -3px 0px 0px $hot-pink inset;
     box-shadow: 0px -3px 0px 0px $hot-pink inset;
+    text-decoration: none;
 }
 
 a {

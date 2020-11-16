@@ -10,6 +10,7 @@
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 2px;
+    z-index: 1;
 }
 
 .navPills {
@@ -30,6 +31,7 @@
 .navLink {
     color: $header-color; 
     animation-duration: .5s;
+    text-decoration: none;
 }
 
 .navLink:hover {
