@@ -142,3 +142,41 @@
         
     }
 }
+
+
+/*
+* MEDIA QUERIES
+*/
+@media (max-width: 800px){
+    .navbar{
+        font-size: 12px;
+    }
+
+    .navPills {
+        padding: 0;
+    }
+
+    .homeLink {
+        animation-name: unset;
+    }
+    
+    .homeLink:hover {
+        animation-name: unset;
+    }
+    
+    .writingLink {
+        animation-name: unset;
+    }
+    
+    .writingLink:hover {
+        animation-name: unset;
+    }
+    
+    .learningLink {
+        animation-name: unset;
+    }
+    
+    .learningLink:hover {
+        animation-name: unset;
+    }
+}

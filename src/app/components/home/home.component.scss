@@ -91,7 +91,53 @@ a:hover {
     display: flex;
 }
 
+.iconLink {
+    display: flex;
+    align-items: center;
+}
+
 .icon {
     width: 25px;
     margin-right: 25px;
+}
+
+
+/*
+* MEDIA QUERIES
+*/
+@media (max-width: 800px){
+    .home {
+        width: inherit;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .first {
+        padding-left: 40px;
+    }
+
+    .last {
+        padding-right: 40px;
+    }
+
+    .heroImage {
+        margin-right: 20px;
+    }
+
+    .about {
+        margin-top: -70px;
+        margin-left: 20px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+    .iconContainer {
+        padding-left: 20px;
+    }
+
+    .icon {
+        width: 20px;
+    }
 }

@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles/desktopStyles.scss"
+              "src/assets/styles/styles.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
@@ -90,7 +90,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles/desktopStyles.scss"
+              "src/assets/styles/styles.scss"
             ],
             "scripts": []
           }
