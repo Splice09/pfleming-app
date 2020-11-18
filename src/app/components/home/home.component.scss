@@ -90,6 +90,7 @@ a:hover {
 */
 .iconContainer {
     display: flex;
+    margin-left: -60px;
 }
 
 .iconLink {
@@ -136,7 +137,7 @@ a:hover {
     }
 
     .iconContainer {
-        padding-left: -20px;
+        margin-left: -20px;
     }
 
     .icon {
