@@ -50,10 +50,11 @@ p {
 */
 
 .about {
-    margin-top:-195px;
+    margin-top:-155px;
+    margin-left: -60px;
     line-height: 34px;
     font-size: 19px;
-    max-width:234px;
+    max-width:260px;
 }
 
 .aboutText {
@@ -115,27 +116,27 @@ a:hover {
     }
 
     .first {
-        padding-left: 40px;
+        padding-left: 0px;
     }
 
     .last {
-        padding-right: 40px;
+        padding-right: 0px;
     }
 
     .heroImage {
-        width: 325px;
-        margin-right: 20px;
+        width: 280px;
+        margin-right: -20px;
     }
 
     .about {
         margin-top: -70px;
-        margin-left: 20px;
+        margin-left: -20px;
         line-height: 24px;
         font-size: 14px;
     }
 
     .iconContainer {
-        padding-left: 20px;
+        padding-left: -20px;
     }
 
     .icon {
