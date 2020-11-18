@@ -105,7 +105,7 @@ a:hover {
 /*
 * MEDIA QUERIES
 */
-@media (max-width: 800px){
+@media (max-width: 800px) {
     .home {
         width: inherit;
     }
@@ -123,6 +123,7 @@ a:hover {
     }
 
     .heroImage {
+        width: 325px;
         margin-right: 20px;
     }
 
@@ -139,5 +140,40 @@ a:hover {
 
     .icon {
         width: 20px;
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+    .titleContainer {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 10px; 
+    }
+
+    .first {
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
+    .last {
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+
+    .heroImage {
+        width: 250px;
+        margin-right: -50px;
+    }
+
+    .about {
+        margin-top: -155px;
+        margin-left: -50px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+    .iconContainer {
+        padding-left: 0px;
+        margin-left: -50px;
     }
 }
