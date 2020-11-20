@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./learning.component.scss']
 })
 export class LearningComponent implements OnInit {
-
+  filePath = "../../../assets/markdown/test.md";
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

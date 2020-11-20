@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClient, HttpClientModule  } from '@angular/common/http';
 
 import { AppComponent } from './components/app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { LearningComponent } from './components/learning/learning.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { LearningComponent } from './components/learning/learning.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule ,
+    MarkdownModule.forRoot({ loader: HttpClient })
   ],
   providers: [],
   bootstrap: [AppComponent]
