@@ -1,0 +1,37 @@
+@import "../../../assets/styles/colors.scss";
+
+.learning {
+    width: 850px;
+}
+
+/*
+* TITLE
+*/
+.title{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+    margin-bottom: 0;
+    color: $yellow;
+    line-height:1.2em;
+}
+
+/*
+* MEDIA QUERIES
+*/
+@media (max-width: 850px) {
+    .learning {
+        width: 95vw;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+    .titleContainer {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 10px; 
+    }
+}
