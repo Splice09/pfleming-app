@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-learning',
@@ -6,11 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./learning.component.scss']
 })
 export class LearningComponent implements OnInit {
-  filePath = "../../../assets/markdown/test.md";
-  constructor() { }
+  routeSubscription: any;
+  filePath: string;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    
+    this.filePath = "../../../assets/markdown/test.md";
+    this.routeSubscription = this.route.data.subscribe(routeData => {
+      if (routeData.filePath !== undefined) {
+        console.log(routeData.filePath);
+        this.filePath = routeData.filePath;
+      }
+    })
   }
 
+  ngOnDestroy() {
+    this.routeSubscription.unsubscribe();
+  }
 }

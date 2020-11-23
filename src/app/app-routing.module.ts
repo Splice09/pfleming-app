@@ -39,11 +39,20 @@ const routes: Routes = [
     path: 'learning',
     component: LearningComponent,
     data: { title: 'Learning'}
+  },
+  {
+    path: 'learning/how-its-made',
+    component: LearningComponent,
+    pathMatch: 'full',
+    data: { 
+      title: 'Learning',
+      filePath: '../../../assets/markdown/how-its-made.md'
+    }
   }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, {useHash: true})],
     exports: [RouterModule],
     declarations: [],
     providers: [{ provide: UrlSerializer, useClass: LowerCaseUrlSerializer }]

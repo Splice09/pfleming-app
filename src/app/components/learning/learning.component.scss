@@ -2,6 +2,10 @@
 
 .learning {
     width: 850px;
+    height: 88vh;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*
@@ -13,6 +17,13 @@
     margin-bottom: 0;
     color: $yellow;
     line-height:1.2em;
+}
+
+/*
+* MARKDOWN CONTAINER
+*/
+.markdownContainer{
+    flex-grow: 1;
 }
 
 /*
