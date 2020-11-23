@@ -43,10 +43,17 @@ const routes: Routes = [
   {
     path: 'learning/how-its-made',
     component: LearningComponent,
-    pathMatch: 'full',
     data: { 
       title: 'Learning',
       filePath: '../../../assets/markdown/how-its-made.md'
+    }
+  },
+  {
+    path: 'learning/tutorials',
+    component: LearningComponent,
+    data: { 
+      title: 'Learning',
+      filePath: '../../../assets/markdown/tutorials/intro-tutorial.md'
     }
   }
 ];

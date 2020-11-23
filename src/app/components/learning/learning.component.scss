@@ -20,6 +20,74 @@
 }
 
 /*
+* NAVIGATION
+*/
+.navbar {
+    width: 100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+.navPills {
+    width: 100%;
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navItem {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.navLink {
+    color: $header-color; 
+    animation-duration: .5s;
+    text-decoration: none;
+    animation-name: navLinkUnhover;
+}
+
+.navLink:hover {
+    text-decoration: none;
+    color: $header-color;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: navLinkHover;
+}
+
+.activeLearning {
+    -webkit-box-shadow: 0px -3px 0px 0px $yellow inset;
+    box-shadow: 0px -3px 0px 0px $yellow inset;
+}
+
+@keyframes navLinkHover {
+    from {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    to {
+        -webkit-box-shadow: 0px -1.5em 0px 0px $yellow inset;
+        box-shadow: 0px -1.5em 0px 0px $yellow inset;
+    }
+}
+
+@keyframes navLinkUnhover {
+    from {
+        -webkit-box-shadow: 0px -1.5em 0px 0px $yellow inset;
+        box-shadow: 0px -1.5em 0px 0px $yellow inset;
+    }
+    to {
+        
+    }
+}
+
+/*
 * MARKDOWN CONTAINER
 */
 .markdownContainer{

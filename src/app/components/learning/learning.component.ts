@@ -13,7 +13,7 @@ export class LearningComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.filePath = "../../../assets/markdown/test.md";
+    this.filePath = "../../../assets/markdown/learning-home.md";
     this.routeSubscription = this.route.data.subscribe(routeData => {
       if (routeData.filePath !== undefined) {
         console.log(routeData.filePath);
