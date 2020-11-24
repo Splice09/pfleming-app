@@ -17,6 +17,7 @@
     margin-bottom: 0;
     color: $yellow;
     line-height:1.2em;
+    text-decoration: none;
 }
 
 /*
@@ -31,17 +32,22 @@
     font-size: 14px;
     letter-spacing: 2px;
     z-index: 1;
+    background-color: $light-gray;
+    border-radius: 5px;
 }
 
 .navPills {
-    width: 100%;
     display:flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
+    padding-left: 0;
 }
 
 .navItem {
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -62,8 +68,8 @@
 }
 
 .activeLearning {
-    -webkit-box-shadow: 0px -3px 0px 0px $yellow inset;
-    box-shadow: 0px -3px 0px 0px $yellow inset;
+    -webkit-box-shadow: 0px -3px 0px 0px $white inset;
+    box-shadow: 0px -3px 0px 0px $white inset;
 }
 
 @keyframes navLinkHover {
@@ -72,15 +78,15 @@
         box-shadow: none;
     }
     to {
-        -webkit-box-shadow: 0px -1.5em 0px 0px $yellow inset;
-        box-shadow: 0px -1.5em 0px 0px $yellow inset;
+        -webkit-box-shadow: 0px -1.5em 0px 0px $white inset;
+        box-shadow: 0px -1.5em 0px 0px $white inset;
     }
 }
 
 @keyframes navLinkUnhover {
     from {
-        -webkit-box-shadow: 0px -1.5em 0px 0px $yellow inset;
-        box-shadow: 0px -1.5em 0px 0px $yellow inset;
+        -webkit-box-shadow: 0px -1.5em 0px 0px $white inset;
+        box-shadow: 0px -1.5em 0px 0px $white inset;
     }
     to {
         
