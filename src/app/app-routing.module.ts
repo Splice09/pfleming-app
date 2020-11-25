@@ -1,6 +1,6 @@
 import { Injectable, NgModule } from '@angular/core';
 import { RouterModule, Routes, DefaultUrlSerializer, UrlSerializer, UrlTree } from '@angular/router';
-import { BlogComponent } from './components/blog/blog.component';
+import { WritingComponent } from './components/writing/writing.component';
 import { HomeComponent } from './components/home/home.component';
 import { LearningComponent } from './components/learning/learning.component';
 
@@ -32,7 +32,7 @@ const routes: Routes = [
   },
   {
     path: 'writing',
-    component: BlogComponent,
+    component: WritingComponent,
     data: { title: 'Writing'}
   },
   {

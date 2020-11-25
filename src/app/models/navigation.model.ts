@@ -1,5 +1,5 @@
 export class Navigation {
     home: string;
-    blog: string;
+    writing: string;
     learning: string;
 }

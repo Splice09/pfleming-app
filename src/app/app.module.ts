@@ -6,7 +6,7 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
 import { AppComponent } from './components/app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
-import { BlogComponent } from './components/blog/blog.component';
+import { WritingComponent } from './components/writing/writing.component';
 import { LearningComponent } from './components/learning/learning.component';
 
 
@@ -14,7 +14,7 @@ import { LearningComponent } from './components/learning/learning.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    BlogComponent,
+    WritingComponent,
     LearningComponent
   ],
   imports: [

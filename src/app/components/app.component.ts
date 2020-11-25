@@ -13,7 +13,7 @@ export class AppComponent {
   ngOnInit() {
     this.navigation = {
       home: "HOME",
-      blog: "WRITING",
+      writing: "WRITING",
       learning: "LEARNING"
     };
   }
