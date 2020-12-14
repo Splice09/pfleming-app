@@ -3,6 +3,7 @@ import { RouterModule, Routes, DefaultUrlSerializer, UrlSerializer, UrlTree } fr
 import { WritingComponent } from './components/writing/writing.component';
 import { HomeComponent } from './components/home/home.component';
 import { LearningComponent } from './components/learning/learning.component';
+import { TwentyTwentyReadingListComponent } from './components/writing/twenty-twenty-reading-list/twenty-twenty-reading-list.component';
 
 @Injectable()
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
@@ -34,6 +35,11 @@ const routes: Routes = [
     path: 'writing',
     component: WritingComponent,
     data: { title: 'Writing'}
+  },
+  {
+    path: 'writing/2020-reading-list',
+    component: TwentyTwentyReadingListComponent,
+    data: { title: '2020 Reading List'}
   },
   {
     path: 'learning',

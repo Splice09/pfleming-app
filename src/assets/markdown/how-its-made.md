@@ -20,4 +20,5 @@
 19. #### Set up application skeleton with functional routing
 20. #### Build out homepage including mobile styling
 21. #### Add [ngx-markdown](https://www.npmjs.com/package/ngx-markdown) package for markdown rendering on learning
-22. #### Build out learning page including mobile styling
+22. #### Build out Learning page (including mobile styling)
+23. #### Build out Writing main link template and link to first blank article (including mobile styling)

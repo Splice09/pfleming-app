@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { WritingComponent } from './components/writing/writing.component';
 import { LearningComponent } from './components/learning/learning.component';
+import { TwentyTwentyReadingListComponent } from './components/writing/twenty-twenty-reading-list/twenty-twenty-reading-list.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { LearningComponent } from './components/learning/learning.component';
     AppComponent,
     HomeComponent,
     WritingComponent,
-    LearningComponent
+    LearningComponent,
+    TwentyTwentyReadingListComponent
   ],
   imports: [
     BrowserModule,

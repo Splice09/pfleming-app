@@ -1,0 +1,44 @@
+@import "../../../../assets/styles/colors.scss";
+
+.writing {
+    width: 850px;
+    height: 88vh;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* TITLE
+*/
+.title{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+    margin-bottom: 0;
+    color: $mint;
+    line-height:1.2em;
+    text-decoration: none;
+}
+
+/*
+* MEDIA QUERIES
+*/
+@media (max-width: 850px) {
+    .writing {
+        width: 95vw;
+    }
+
+    .title {
+        font-size: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+    .titleContainer {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 10px; 
+    }
+}
