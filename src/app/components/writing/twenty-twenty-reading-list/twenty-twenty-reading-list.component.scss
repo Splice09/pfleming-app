@@ -21,6 +21,73 @@
 }
 
 /*
+* INTRO PARAGRAPH
+*/
+.introParagraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: $header-color;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*
+* BOOK REVIEW
+*/
+.bookReviewContainer {
+    display: grid;
+    grid-template-columns: 66.6% 33.3%;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+    "bookTitle coverPhoto"
+    "whyIRead coverPhoto"
+    "score coverPhoto"
+    "opinion coverPhoto";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: $header-color;
+}
+
+.bookTitleContainer {
+    grid-area: bookTitle;
+}
+
+.wirContainer {
+    grid-area: whyIRead;
+}
+
+.scoreContainer {
+    grid-area: score;
+}
+
+.opinionContainer {
+    grid-area: opinion;
+}
+
+.coverPhotoContainer {
+    grid-area: coverPhoto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.bookTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.coverPhoto {
+    position: relative;
+    width: 80%;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+/*
 * MEDIA QUERIES
 */
 @media (max-width: 850px) {

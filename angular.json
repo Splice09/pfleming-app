@@ -21,7 +21,7 @@
             "aot": true,
             "assets": [
               "src/assets",
-              "src/app/componenets/learning/markdown/test/test.md"
+              "src/app/components/writing/twenty-twenty-reading-list/bookCovers"
             ],
             "styles": [
               "src/assets/styles/styles.scss",
@@ -97,7 +97,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/assets",
-              "src/app/componenets/learning/markdown/test/test.md"
+              "src/app/components/writing/twenty-twenty-reading-list/bookCovers"
             ],
             "styles": [
               "src/assets/styles/styles.scss",

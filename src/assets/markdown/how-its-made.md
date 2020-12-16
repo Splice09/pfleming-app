@@ -18,7 +18,7 @@
 17. #### Update @ and WWW CNAME on domain registrar to point to Cloudfront
 18. #### Add [AppRouting](https://angular.io/guide/router) to the angular project
 19. #### Set up application skeleton with functional routing
-20. #### Build out homepage including mobile styling
+20. #### Build out homepage (including mobile styling)
 21. #### Add [ngx-markdown](https://www.npmjs.com/package/ngx-markdown) package for markdown rendering on learning
 22. #### Build out Learning page (including mobile styling)
 23. #### Build out Writing main link template and link to first blank article (including mobile styling)

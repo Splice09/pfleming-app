@@ -75,8 +75,8 @@
 }
 
 .articleTitle {
-    font-weight: 400;
-    color: $mint;
+    font-weight: 600;
+    color: $header-color;
     text-decoration: none;
     animation-duration: .5s;
     animation-name: articleTitleUnhover;
@@ -93,15 +93,15 @@
         box-shadow: none;
     }
     to {
-        -webkit-box-shadow: 0px -3px 0px 0px $light-gray inset;
-        box-shadow: 0px -3px 0px 0px $light-gray inset;
+        -webkit-box-shadow: 0px -3px 0px 0px $mint inset;
+        box-shadow: 0px -3px 0px 0px $mint inset;
     }
 }
 
 @keyframes articleTitleUnhover {
     from {
-        -webkit-box-shadow: 0px -3px 0px 0px $light-gray inset;
-        box-shadow: 0px -3px 0px 0px $light-gray inset;
+        -webkit-box-shadow: 0px -3px 0px 0px $mint inset;
+        box-shadow: 0px -3px 0px 0px $mint inset;
     }
     to {
         -webkit-box-shadow: none;
