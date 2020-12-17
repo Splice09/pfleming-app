@@ -16,7 +16,7 @@ export class TwentyTwentyReadingListComponent implements OnInit {
         "author": "Robert M. Pirsig",
         "wir": "Originally gifted to me in college by my Uncle who has been a long-time supporter of my reading. The recommendation was almost magically validated by a mention in Cloud Atlas Part 3, which I was reading at the time he gifted it to me.",
         "score": "7/10",
-        "myThoughts": "This book provides an amazing look at some deeper questions and philosophies for life. It gave me some amazing context through its lense of classically minded vs romantically minded people. I docked a few points because the main character can be a bit self-fellating in his rhetoric. Overall, a combination of taking me so many years to finish and Pirsig's afterward and explaining his inspiration for the story had me tearing up.",
+        "myThoughts": "This book provides an amazing look at some deeper questions and philosophies for life. It gave me some amazing context through its lense of classically minded vs romantically minded people. I docked a few points because the main character can be a bit self-fellating in his rhetoric. Overall, a combination of it taking me so many years to finish and Pirsig's Afterward explaining his inspiration for the story had me tearing up.",
         "cover": "app/components/writing/twenty-twenty-reading-list/bookCovers/zen-and-the-art-of-motorcycle-maintenance.jpg"
       },
       {
@@ -32,7 +32,7 @@ export class TwentyTwentyReadingListComponent implements OnInit {
         "author": "Mel Robbins",
         "wir": "At the time I felt desperate for self improvement. I felt like a failure and was taunted by the desire to have a magical solution that could help me get what I want.",
         "score": "4 out of 7.5 hours wasted",
-        "myThoughts": "I found this book insanely annoying. The author goes on and on about how her life was in shambles and then gushes about how she turned it all around. Followed by a bunch of success stories from people the rule worked for. I can grant that it's useful procedure for some, but the message amounts to the Nike slogan of \"Just Do It.\" Looking at the positives: 1) Her husbands name is Christopher Robbins which is just close enough to be amusing. 2) I used the 5 second rule to decide to stop reading the book.",
+        "myThoughts": "I found this book insanely annoying. The author goes on and on about how her life was in shambles and then gushes about how she turned it all around by acting practically on impulse. Followed by a bunch of success stories from people the rule worked for. I can grant that it's useful procedure for some, but the message amounts to the Nike slogan of \"Just Do It.\" Looking at the positives: 1) Her husbands name is Christopher Robbins which is just close enough to be amusing. 2) I used the 5 second rule to decide to stop reading the book.",
         "cover": "app/components/writing/twenty-twenty-reading-list/bookCovers/the-five-second-rule.jpg"
       },
       {
