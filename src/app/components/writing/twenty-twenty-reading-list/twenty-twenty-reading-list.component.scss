@@ -6,11 +6,17 @@
     margin-top: 2vh;
     display: flex;
     flex-direction: column;
+    margin-bottom:50px;
 }
 
 /*
 * TITLE
 */
+.titleContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .title{
     font-family: 'Permanent Marker', cursive;
     font-size: 80px;
@@ -42,12 +48,14 @@
     grid-template-areas:
     "bookTitle coverPhoto"
     "whyIRead coverPhoto"
-    "score coverPhoto"
-    "opinion coverPhoto";
+    "opinion coverPhoto"
+    "score coverPhoto";
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 300;
     color: $header-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bookTitleContainer {
@@ -78,13 +86,30 @@
     font-weight: 600;
 }
 
+.author {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .coverPhoto {
     position: relative;
     width: 80%;
+    height: 350px;
 }
 
 .strong {
     font-weight: 600;
+}
+
+.weak {
+    text-align: middle;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.blankSpace {
+    width: 100%;
+    margin-top:50px;
 }
 
 /*
@@ -95,10 +120,40 @@
         width: 95vw;
     }
 
+    .titleContainer {
+        text-align: center;
+    }
+
     .title {
         font-size: 60px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    /*
+    * BOOK REVIEW
+    */
+    .bookReviewContainer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "coverPhoto"
+        "bookTitle"
+        "whyIRead"
+        "opinion"
+        "score";
+
+    }
+
+    .coverPhotoContainer {
+        justify-content: center;
+    }
+
+    .coverPhoto {
+        position: relative;
+        width: 60%;
+        height: 250px;
     }
 }
 
@@ -107,5 +162,25 @@
         display: flex;
         margin-top: 0px;
         margin-bottom: 10px; 
+    }
+
+    .bookReviewContainer {
+        grid-template-columns: 66.6% 33.3%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "bookTitle coverPhoto"
+        "whyIRead coverPhoto"
+        "opinion coverPhoto"
+        "score coverPhoto";
+    }
+
+    .coverPhotoContainer {
+        justify-content: flex-end;
+    }
+
+    .coverPhoto {
+        position: relative;
+        width: 80%;
+        height: 300px;
     }
 }

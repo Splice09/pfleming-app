@@ -3,31 +3,45 @@
         <a class="title" routerLink="/writing">2020 Reading List</a>
     </div>
     <div class="introParagraph">
-        TEXT GOES HERE
+        As a child I was a voracious reader. Partly because my parent's offered a reward, "one pack of Pokemon cards for every book that contained over 150 pages read." 
+        Partly because my childhood was filled with books my adolecent brain found to be absolute bangers. Harry Potter, Artemis Fowl, The Rangers Apprentice, 
+        The Giver, The Hobbit, Lord of the Rings, Hitchhiker's Guide to the Galaxy. 
+        There has never been a shortage of enjoyable literature; however, as I wrapped up highschool and eased into college, 
+        I somehow lost touch with the desire to spend my time consuming it. 
+        <br><br>
+        I've still managed to add a piece to my collection here and there over the years, but it wasn't until I started listening to Audio Books as a means to
+        survive long drives that I really started enjoying stories again. In fact my Audible™ (not sponsored <span class="weak">call me</span>) 
+        Library has partially elevated my ego to that of a Sci-Fi/Fantasy snob.
+        <br><br>
+        Well, I've combined my new-found interest in consuming stories with a year where...frankly, we all have too much free time. The result? This highly regarded,
+        ultra pretentious, world renowned -- Two Thousand Twenty A.D. Reading List. So crack open a fresh PBR and buckle up.
     </div>
-    <div class="bookReviewContainer">
+    <div class="bookReviewContainer" *ngFor="let book of books">
         <div class="bookTitleContainer">
             <span class="bookTitle">
-                Zen and the Art of Motorcycle Maintenance
+                {{book.title}}
             </span>
+            <br>
+            <span class="author">{{book.author}}</span>
         </div>
         <div class="wirContainer">
             <div class="whyIRead">
-                <span class="strong">Why I read it: </span><span>stuff here</span>
-            </div>
-        </div>
-        <div class="scoreContainer">
-            <div class="score">
-                <span class="strong">Score: </span><span>stuff here</span>
+                <span class="strong">Why I read it: </span><span>{{book.wir}}</span>
             </div>
         </div>
         <div class="opinionContainer">
             <div class="opinion">
-                <span class="strong">My thoughts: </span><span>stuff here</span>
+                <span class="strong">My thoughts: </span><span>{{book.myThoughts}}</span>
+            </div>
+        </div>
+        <div class="scoreContainer">
+            <div class="score">
+                <span class="strong">Score: </span><span>{{book.score}}</span>
             </div>
         </div>
         <div class="coverPhotoContainer">
-            <img class="coverPhoto" src="app/components/writing/twenty-twenty-reading-list/bookCovers/zen-and-the-art-of-motorcycle-maintenance.jpg" alt="book cover art">
+            <img class="coverPhoto" src={{book.cover}} alt="book cover art">
         </div>
     </div>
+    <div class="blankSpace">&nbsp;</div>
 </div>
