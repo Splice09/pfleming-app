@@ -1,0 +1,106 @@
+@import "../../../../assets/styles/colors.scss";
+
+.writing {
+    width: 850px;
+    height: 88vh;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:50px;
+}
+
+/*
+* TITLE
+*/
+.titleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+    margin-bottom: 0;
+    color: $mint;
+    line-height:1.2em;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*
+* INTRO PARAGRAPH
+*/
+.introParagraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: $header-color;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.graphDescription {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: $header-color;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.closingRemarks {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: $header-color;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.weak {
+    text-align: middle;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.blankSpace {
+    width: 100%;
+    margin-top:50px;
+}
+
+.graph {
+    width: 100%;
+}
+
+/*
+* MEDIA QUERIES
+*/
+@media (max-width: 850px) {
+    .writing {
+        width: 95vw;
+    }
+
+    .titleContainer {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+    .titleContainer {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 10px; 
+    }
+
+}

@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { WritingComponent } from './components/writing/writing.component';
 import { LearningComponent } from './components/learning/learning.component';
 import { TwentyTwentyReadingListComponent } from './components/writing/twenty-twenty-reading-list/twenty-twenty-reading-list.component';
+import { TwentyTwentyRunningComponent } from './components/writing/twenty-twenty-running/twenty-twenty-running.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { TwentyTwentyReadingListComponent } from './components/writing/twenty-tw
     HomeComponent,
     WritingComponent,
     LearningComponent,
-    TwentyTwentyReadingListComponent
+    TwentyTwentyReadingListComponent,
+    TwentyTwentyRunningComponent
   ],
   imports: [
     BrowserModule,

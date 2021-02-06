@@ -21,7 +21,8 @@
             "aot": true,
             "assets": [
               "src/assets",
-              "src/app/components/writing/twenty-twenty-reading-list/bookCovers"
+              "src/app/components/writing/twenty-twenty-reading-list/bookCovers",
+              "src/app/components/writing/twenty-twenty-running/graphs"
             ],
             "styles": [
               "src/assets/styles/styles.scss",
@@ -97,7 +98,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/assets",
-              "src/app/components/writing/twenty-twenty-reading-list/bookCovers"
+              "src/app/components/writing/twenty-twenty-reading-list/bookCovers",
+              "src/app/components/writing/twenty-twenty-running/graphs"
             ],
             "styles": [
               "src/assets/styles/styles.scss",
