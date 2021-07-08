@@ -4,7 +4,8 @@ import { WritingComponent } from './components/writing/writing.component';
 import { HomeComponent } from './components/home/home.component';
 import { LearningComponent } from './components/learning/learning.component';
 import { TwentyTwentyReadingListComponent } from './components/writing/twenty-twenty-reading-list/twenty-twenty-reading-list.component';
-import { TwentyTwentyRunningComponent} from './components/writing/twenty-twenty-running/twenty-twenty-running.component'
+import { TwentyTwentyRunningComponent} from './components/writing/twenty-twenty-running/twenty-twenty-running.component';
+import { RoanMountainHikeComponent } from './components/writing/roan-mountain-hike/roan-mountain-hike.component';
 
 @Injectable()
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
@@ -46,6 +47,11 @@ const routes: Routes = [
     path: 'writing/2020-running',
     component: TwentyTwentyRunningComponent,
     data: { title: 'Running 365 Miles In A Year'}
+  },
+  {
+    path: 'writing/hiking-roan-mountain',
+    component: RoanMountainHikeComponent,
+    data: { title: 'Hiking Roan Mountain'}
   },
   {
     path: 'learning',

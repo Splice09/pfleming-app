@@ -22,7 +22,8 @@
             "assets": [
               "src/assets",
               "src/app/components/writing/twenty-twenty-reading-list/bookCovers",
-              "src/app/components/writing/twenty-twenty-running/graphs"
+              "src/app/components/writing/twenty-twenty-running/graphs",
+              "src/app/components/writing/roan-mountain-hike/photos"
             ],
             "styles": [
               "src/assets/styles/styles.scss",
@@ -99,7 +100,8 @@
             "assets": [
               "src/assets",
               "src/app/components/writing/twenty-twenty-reading-list/bookCovers",
-              "src/app/components/writing/twenty-twenty-running/graphs"
+              "src/app/components/writing/twenty-twenty-running/graphs",
+              "src/app/components/writing/roan-mountain-hike/photos"
             ],
             "styles": [
               "src/assets/styles/styles.scss",

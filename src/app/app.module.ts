@@ -10,6 +10,7 @@ import { WritingComponent } from './components/writing/writing.component';
 import { LearningComponent } from './components/learning/learning.component';
 import { TwentyTwentyReadingListComponent } from './components/writing/twenty-twenty-reading-list/twenty-twenty-reading-list.component';
 import { TwentyTwentyRunningComponent } from './components/writing/twenty-twenty-running/twenty-twenty-running.component';
+import { RoanMountainHikeComponent } from './components/writing/roan-mountain-hike/roan-mountain-hike.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TwentyTwentyRunningComponent } from './components/writing/twenty-twenty
     WritingComponent,
     LearningComponent,
     TwentyTwentyReadingListComponent,
-    TwentyTwentyRunningComponent
+    TwentyTwentyRunningComponent,
+    RoanMountainHikeComponent
   ],
   imports: [
     BrowserModule,
