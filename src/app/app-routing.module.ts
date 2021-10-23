@@ -6,6 +6,7 @@ import { LearningComponent } from './components/learning/learning.component';
 import { TwentyTwentyReadingListComponent } from './components/writing/twenty-twenty-reading-list/twenty-twenty-reading-list.component';
 import { TwentyTwentyRunningComponent} from './components/writing/twenty-twenty-running/twenty-twenty-running.component';
 import { RoanMountainHikeComponent } from './components/writing/roan-mountain-hike/roan-mountain-hike.component';
+import { PandemicCocktailsComponent } from './components/writing/pandemic-cocktails/pandemic-cocktails.component';
 
 @Injectable()
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
@@ -52,6 +53,11 @@ const routes: Routes = [
     path: 'writing/hiking-roan-mountain',
     component: RoanMountainHikeComponent,
     data: { title: 'Hiking Roan Mountain'}
+  },
+  {
+    path: 'writing/pandemic-cocktails',
+    component: PandemicCocktailsComponent,
+    data: { title: 'Pandemic Cocktails'}
   },
   {
     path: 'learning',

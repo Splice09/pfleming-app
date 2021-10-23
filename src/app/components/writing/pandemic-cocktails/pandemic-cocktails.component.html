@@ -1,0 +1,36 @@
+<div class="writing">
+    <div class="titleContainer">
+        <a class="title" routerLink="/writing">Pandemic Cocktials</a>
+    </div>
+    <div class="introParagraph">
+        Making cocktails
+    </div>
+    <div class="bookReviewContainer" *ngFor="let book of books">
+        <div class="bookTitleContainer">
+            <span class="bookTitle">
+                {{book.title}}
+            </span>
+            <br>
+            <span class="author">{{book.author}}</span>
+        </div>
+        <div class="wirContainer">
+            <div class="whyIRead">
+                <span class="strong">Why I read it: </span><span>{{book.wir}}</span>
+            </div>
+        </div>
+        <div class="opinionContainer">
+            <div class="opinion">
+                <span class="strong">My thoughts: </span><span>{{book.myThoughts}}</span>
+            </div>
+        </div>
+        <div class="scoreContainer">
+            <div class="score">
+                <span class="strong">Score: </span><span>{{book.score}}</span>
+            </div>
+        </div>
+        <div class="coverPhotoContainer">
+            <img class="coverPhoto" src={{book.cover}} alt="book cover art">
+        </div>
+    </div>
+    <div class="blankSpace">&nbsp;</div>
+</div>
