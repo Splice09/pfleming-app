@@ -12,6 +12,8 @@ import { TwentyTwentyReadingListComponent } from './components/writing/twenty-tw
 import { TwentyTwentyRunningComponent } from './components/writing/twenty-twenty-running/twenty-twenty-running.component';
 import { RoanMountainHikeComponent } from './components/writing/roan-mountain-hike/roan-mountain-hike.component';
 import { PandemicCocktailsComponent } from './components/writing/pandemic-cocktails/pandemic-cocktails.component';
+import { TutorialsComponent } from './components/learning/tutorials/tutorials/tutorials.component';
+import { HowItsMadeComponent } from './components/learning/how-its-made/how-its-made.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { PandemicCocktailsComponent } from './components/writing/pandemic-cockta
     TwentyTwentyReadingListComponent,
     TwentyTwentyRunningComponent,
     RoanMountainHikeComponent,
-    PandemicCocktailsComponent
+    PandemicCocktailsComponent,
+    TutorialsComponent,
+    HowItsMadeComponent
   ],
   imports: [
     BrowserModule,
